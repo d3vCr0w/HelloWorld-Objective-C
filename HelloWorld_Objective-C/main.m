@@ -52,6 +52,11 @@ int main(int argc, const char * argv[]) { //or just int main(){}
         [me jumpHeight:135.7f];
         [me runDistance:200 withSpeed:27.5f];
         [Person currentYear];
+        NSLog(@"Name: %@", [me name]);
+        [me setName:@"Santiago"];
+        NSLog(@"My new name is: %@", [me name]);
+        NSLog(@"My last name is: %@", [me lastName]);
+        NSLog(@" My age is: %i", [me age]);
         
         [alien beepBep];
         NSLog(@"%@", [alien max:5 Between:5]);

@@ -10,11 +10,17 @@
 
 @implementation Person
 
-NSString *name;
-NSDate *birthDate;
-float height;
-float weight;
 int year;
+
+- (id) init{
+    self = [super init];
+    if(self){
+        _name = @"Default name";
+        [self setLastName:@"My LastName"];
+        self.age = 20;
+    }
+    return self;
+}
 
 - (void) walk{
     NSLog(@"Hi there, I'm walking");

@@ -8,7 +8,24 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Person : NSObject
+@interface Person : NSObject {
+    @private
+    float id_number;
+    
+    @public
+    NSString *name;
+    
+    @public
+    NSDate *birth_date;
+    
+    @protected
+    float weight;
+}
+
+@property (nonatomic, strong) NSString *name;
+@property (nonatomic, strong) NSString *lastName;
+@property (nonatomic, assign) int age;
+@property (nonatomic, assign, getter = isAlive) BOOL ailve;
 
 - (void) walk;
 - (void) jumpHeight: (float) centimiters;
